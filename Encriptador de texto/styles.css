@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c3c1c7;
+}
+
+header{
+    width: 100%;
+    background-color: #0F222D;
+    display: flex;
+    justify-content: space-between;
+    
+}
+header img{
+    width: 50%;
+    max-width: 300px;
+    min-width: 150px;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+.alura-logo{
+    width: 10%;
+    max-width: 100px;
+    min-width: 50px;
+    margin: 45px 70px;
+}
+.main-section-1{
+    background-image: url(./img/ejemplos-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: auto;
+    padding: 5px;
+    box-shadow: 12px 15px 30px black, -12px 15px 30px black;
+    border: 5px solid rgb(231, 212, 212) ;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35PX;
+    margin-bottom: 10px;
+    
+}
+.textarea-letras{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+
+.input-texto{
+    font-size: 20px;
+    display: flex;
+    margin: 0 0 40px 0;
+}
+.input-texto::placeholder{
+    color: #0F222D;
+}
+
+.letras{
+    margin: -10px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 25px;
+    letter-spacing: 20px;
+    line-height: 40px;
+    text-shadow: 10px 10px 5px #bd567a;
+    font-family: 'Cormorant Garamond', serif; 
+    font-weight: bold;  
+    float: right;
+}
+.letra{
+    text-align: center;
+    animation: all 0.5s;
+}
+.letra:hover{
+    transform: scale(1.6);   
+}
+/* From uiverse.io by @mrhyddenn */
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 5px;
+
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 20px;
+    transition: 0.5s;
+    position: relative;
+    font-size: 17px;
+    background: #333;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    letter-spacing: 0.25em;
+    background: #ff1867;
+    color: #ff1867;
+    box-shadow: 0 0 45px #ff1867;
+    border-radius: 10px;
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #222222;
+    border-radius: 10px;
+  }
+  
+  button span {
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  button i {
+    position: absolute;
+    inset: 0;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  button i::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #ff1867;
+    width: 7px;
+    height: 4px;
+    top: -3.5px;
+    left: 80%;
+    background: #222222;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+  
+  button:hover i::before {
+    width: 20px;
+    left: 20%;
+  }
+  
+  button i::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #ff1867;
+    width: 7px;
+    height: 4px;
+    bottom: -3.5px;
+    left: 20%;
+    background: #222222;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+  
+  button:hover i::after {
+    width: 20px;
+    left: 80%;
+  }
+
+.main-section-2{
+    background-image: url(./img/ejemplos-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: auto;
+    padding: 5px;
+    box-shadow: 12px 15px 30px black, -12px 15px 30px black;
+    border: 5px solid rgb(231, 212, 212) ;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.tetarea-y-imagen-section2{
+    display: flex;
+    flex-direction: column;
+}
+.text-area-mensaje{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.imagen-section-2{
+    width: 30%;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.boton-copiar{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+
+
+@media screen and (min-width: 750px) {
+    h1{
+        font-size: 40px;
+    }
+    .textarea-letras{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        gap: 25px;  
+    }
+    textarea{
+        width: 100%;
+    }
+    .text-area-mensaje{
+        width: 50%;
+        margin: 0 auto;  
+    }
+    .letras{
+        font-size: 35px;
+        letter-spacing: 20px;
+        line-height: 30px;
+        }   
+        .botones{
+            margin: 10px auto;
+        }    
+}
+@media screen and (min-width: 950px) {
+
+    .textarea-letras{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        gap: 335px; 
+        
+    }
+    textarea{
+        width: 100%;
+    }
+    
+   
+          
+}
+
+@media screen and (min-width: 455px) {
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        margin: 0 auto;
+    }
+    .encriptar{
+        margin-left: 30px;
+    }
+    .desencriptar{
+        margin-left: 30px;
+    }
+    
+
+    
+}
+

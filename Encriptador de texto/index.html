@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet" >
+</head>
+<body>
+    <header>
+        <img src="./img/Logo-Jhan-Carlos.png" alt="">
+        <img class="alura-logo" src="./img/Vector.png" alt="Logo de Alura">
+    </header>
+    
+    <main>
+        <section class="main-section-1">
+            <h1>Texto a encriptar</h1>
+            <div class="textarea-letras">   
+                <textarea class="input-texto" cols="20" rows="15" 
+                    placeholder="Ingrese el texto aquí" autofocus>
+                </textarea>
+                <div class="letras">
+                        <p class="letra">a</p>
+                        <p class="letra">b</p>
+                        <p class="letra">c</p>
+                        <p class="letra">d</p>
+                        <p class="letra">e</p>
+                        <p class="letra">f</p>
+                        <p class="letra">g</p>
+                        <p class="letra">h</p>
+                        <p class="letra">i</p>
+                        <p class="letra">j</p>
+                        <p class="letra">k</p>
+                        <p class="letra">l</p>
+                        <p class="letra">m</p>
+                        <p class="letra">n</p>
+                        <p class="letra">ñ</p>
+                        <p class="letra">o</p>
+                        <p class="letra">p</p>
+                        <p class="letra">q</p>
+                        <p class="letra">r</p>
+                        <p class="letra">s</p>
+                        <p class="letra">t</p>
+                        <p class="letra">u</p>
+                        <p class="letra">v</p>
+                        <p class="letra">w</p>
+                        <p class="letra">x</p>
+                        <p class="letra">y</p>
+                        <p class="letra">z</p>
+                </div>
+            </div>
+            <div class="botones">   
+            
+                <button class="encriptar" onclick="btnEncriptar()">
+                    <span>Encriptar</span><i></i>      
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    <span>Desencriptar</span><i></i>
+                </button>
+            </div>  
+        </section>
+        <section class="main-section-2">
+            <h1>Texto encriptado</h1>
+            <div class="tetarea-y-imagen-section2">
+                <textarea class="text-area-mensaje" id="" cols="35" rows="10"></textarea>
+                <div>
+                    <img class="imagen-section-2" src="./img/img1.png" alt="Imagen de seguridad">
+                </div>      
+            </div>
+            <div class="botones">
+                <button class="boton-copiar" onclick="copiar()">
+                    <span>Copiar texto</span><i></i>
+                </button> 
+            </div>   
+        </section>
+
+        <script src="./script.js"></script>
+    
+    </main>
+</body>
+</html>
